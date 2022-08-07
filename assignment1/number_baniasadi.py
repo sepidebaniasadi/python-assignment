@@ -1,7 +1,7 @@
 from tempfile import TemporaryDirectory
 
 
-nnumber=int(input("enter number please enter a number that has more than one digit:"))
+number=int(input("enter number please enter a number that has more than one digit:"))
 reverse=0
 while number > 0:
   temp=number%10
