@@ -1,8 +1,7 @@
-
 length=(float(input("enter your length with metr: ")))
 wieght=(float(input('enter your wieght with kg: ')))
 BMI=(wieght/(length**2))
-if BMI>=16 or BMI<18.5:
+if BMI<=16 or BMI<18.5:
     print(" your BMI is: ", BMI,'/n'"body wiegth deficit")
 elif BMI>=18.5 or BMI<24:
     print(" your BMI is: ", BMI,'/n'"normal")
@@ -12,7 +11,8 @@ elif BMI>=30 or BMI<35:
     print(" your BMI is: ", BMI,'/n'"obesity first degree")     
 elif BMI>=35 or BMI<40:
     print(" your BMI is: ", BMI,'/n'"obesity second degree")  
-else:
+elif BMI>40:
     print(" your BMI is: ", BMI,'/n'"obesity third degree")
-
+else:
+    print("This interval was unpredictable.")
 
