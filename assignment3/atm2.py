@@ -1,7 +1,7 @@
 passwrd=['8','2','1','3']
 pass_p=['3','1','2','8']
 count=1
-while count<4:
+while count<=4:
     passu=list(input("enter password"))
     if passwrd==passu:
           print('true')
