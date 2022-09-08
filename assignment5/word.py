@@ -1,6 +1,7 @@
 from tabulate import tabulate as t
 
 word=input("please enter you'r word: ")
+word=word.lower()
 for i in range(len(word)):
     # if word[i]=='a' or word[i]=='o' or word[i]=='u' or word[i]=='i' or word[i]=='e':
        A= word.split('a')
