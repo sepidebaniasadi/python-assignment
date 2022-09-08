@@ -2,6 +2,8 @@ import math
 from tabulate import tabulate as t
 n=int(input("How many sentences do you want to check?"))
 I=1
+element=['.',',','@','#',"/",";"]
+
 for i in range(n):
     cchar=0
     cword=0
@@ -12,6 +14,7 @@ for i in range(n):
     cnum=0
     cc=-1
     sentence=input("sentens:")
+    sentence_forword=sentence
     for char in sentence:
         cchar+=1
         ccomi=-1
@@ -21,9 +24,10 @@ for i in range(n):
         ccom1+=1
     for space in sentence.split():
         cc+=1
-    for word in sentence.split():
-        if word=='.' or word==',':
-            ccomi+=1
+    for elemen in element:
+        sentence_forword.replace(elemen,'')
+    list=sentence_forword.split()
+    cw=len(list)
     for num in sentence:
         if num=='1' or num=='2'or num=='3' or num=='4' or num=='5' or num=='6' or num=='7' or num=='8' or num=='9' or num=='0':
             cnum+=1
@@ -40,7 +44,7 @@ for i in range(n):
     
     table=[['comma',ccom+ccom1],
         ['character',cchar],
-        ['word',cc-ccomi],
+        ['word',len(list)],
         ['space',cc],
         ['letter',letter],
         ['caps letter',cupper],
