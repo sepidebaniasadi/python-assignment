@@ -2,7 +2,9 @@ import math
 from tabulate import tabulate as t
 n=int(input("How many sentences do you want to check?"))
 I=1
-element=['.',',','@','#',"/",";"]
+element=["." , "," , "/" , "\\" , "[" , "]" , "{" , "}" , "!" , "#" , "&" , "(" , 
+                 ")" , "*" , "^" , ":" , ";" , "\'" , "\"" , "<" , ">" , "|" , "$" , "%" ,
+                 "~" , "`" , "@" , "?" ]
 
 for i in range(n):
     cchar=0
@@ -13,8 +15,16 @@ for i in range(n):
     cupper=0
     cnum=0
     cc=-1
-    sentence=input("sentens:")
+    sentence="""asdhlkj
+    asjdlk
+    sdjfh
+    ..
+    ,,
+    asd
+
+    dskjflkj"""
     sentence_forword=sentence
+    nenter= sentence.count("\n")
     for char in sentence:
         cchar+=1
         ccomi=-1
@@ -24,10 +34,12 @@ for i in range(n):
         ccom1+=1
     for space in sentence.split():
         cc+=1
-    for elemen in element:
-        sentence_forword.replace(elemen,'')
-    list=sentence_forword.split()
-    cw=len(list)
+    for elments in element:
+     sentence_forword = sentence_forword.replace(elments , " ")
+
+     word = sentence_forword.split()
+     cw = len(word)
+       
     for num in sentence:
         if num=='1' or num=='2'or num=='3' or num=='4' or num=='5' or num=='6' or num=='7' or num=='8' or num=='9' or num=='0':
             cnum+=1
@@ -41,15 +53,18 @@ for i in range(n):
             cupper+=1
             continue
     letter=cupper+clower
+
+
     
-    table=[['comma',ccom+ccom1],
+    table=[['comma and dot',ccom+ccom1],
         ['character',cchar],
-        ['word',len(list)],
+        ['word',cw],
         ['space',cc],
         ['letter',letter],
         ['caps letter',cupper],
         ['small letter',clower],
-        ['number',cnum]]
+        ['number',cnum],
+        ['enter',nenter]]
     print(t(table,tablefmt='fancy_grid'))
 
 
