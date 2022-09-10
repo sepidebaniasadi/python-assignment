@@ -15,14 +15,7 @@ for i in range(n):
     cupper=0
     cnum=0
     cc=-1
-    sentence="""asdhlkj
-    asjdlk
-    sdjfh
-    ..
-    ,,
-    asd
-
-    dskjflkj"""
+    sentence=input("sentece : ")
     sentence_forword=sentence
     nenter= sentence.count("\n")
     for char in sentence:
