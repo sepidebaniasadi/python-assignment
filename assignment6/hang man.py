@@ -32,7 +32,7 @@ list_ffoodl3=['takoyaki','ramen','sukiyaki','tempura','kimvap']
 list_irfilml1=['ch','motreb','ekhraji ha','del','tala']
 list_irfilml2=['taik khal','sag band','asb','enferadi','dinamit']
 list_irfilml3=['katiusha','meditarane','chahar angosht','ankaboot','rbe siah']
-list_ffilml1=['365 days','drive','witches','fairy tale','venom']
+list_ffilml1=['days','drive','witches','fairy tale','venom']
 list_ffilml2=['abigail','carter','rings','barbarians','the host']
 list_ffilml3=['killer next door','before you','downfall','zombieland','the dragon pearl']
 list_sporl1=['football','volleyball','basketball','baseball','ping pong']
@@ -95,7 +95,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower().lower()
                         
                                 
                                 if letterlist.find(letter)==-1:
@@ -129,6 +129,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"You have'nt made it to the next step:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     
                                     show_list.clear()
                                     w_list.clear()
@@ -157,7 +158,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -191,6 +192,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
                 if s==2 and c==True:
@@ -216,7 +218,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -250,6 +252,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
 
         elif select2==2:
@@ -280,7 +283,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -317,6 +320,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"You have'nt made it to the next step:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     
                                     show_list.clear()
                                     w_list.clear()
@@ -345,7 +349,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -378,6 +382,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
                 if s==2 and c==True:
@@ -404,7 +409,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -437,6 +442,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
 
         elif select2==3:
@@ -467,7 +473,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -500,6 +506,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"You have'nt made it to the next step:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     
                                     show_list.clear()
                                     w_list.clear()
@@ -528,7 +535,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -561,6 +568,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -588,7 +596,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -621,6 +629,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         elif select2==4:
             
@@ -650,7 +659,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -711,7 +720,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -744,6 +753,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -771,7 +781,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -804,6 +814,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         elif select2==5:
             
@@ -833,7 +844,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -894,7 +905,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -927,6 +938,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -954,7 +966,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -987,6 +999,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         elif select2==6:
             
@@ -1016,7 +1029,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1077,7 +1090,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1110,6 +1123,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -1137,7 +1151,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1170,6 +1184,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         #ffilm1
         elif select2==7:
@@ -1200,7 +1215,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1261,7 +1276,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1294,6 +1309,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -1321,7 +1337,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1354,6 +1370,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
 
         #fruite
@@ -1385,7 +1402,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1446,7 +1463,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1479,6 +1496,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -1506,7 +1524,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1539,6 +1557,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         #sport1
         elif select2==9:
@@ -1569,7 +1588,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1630,7 +1649,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1663,6 +1682,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -1690,7 +1710,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1723,6 +1743,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         #cloth
         elif select2==10:
@@ -1753,7 +1774,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1814,7 +1835,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1847,6 +1868,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                     show_list.clear()
                                 break
 
@@ -1874,7 +1896,7 @@ while True:
                                 break
                             else:
                                 
-                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL)
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
                         
                                 if letterlist.find(letter)==-1:
                                     print('wrong')
@@ -1907,6 +1929,7 @@ while True:
                                 else:
                                     print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
                                     c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
         if c==False:
                 ex=input("Would you like to try again?yes/no...")
