@@ -290,14 +290,7 @@ while True:
                                     letterlist.remove(letter)
                                     letterlist='*'.join(letterlist)
                         
-                                if letterlist.find(letter)==-1:
-                                    print('wrong')
-                                    continue
-                                else:
-                                    letterlist=letterlist.split("*")
-                                    letterlist.remove(letter)
-                                    letterlist='*'.join(letterlist)
-                        
+                            
                                     
                                     
                                 if finall_w.find(letter)==-1:
