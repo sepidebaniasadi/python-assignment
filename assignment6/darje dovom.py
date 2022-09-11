@@ -4,6 +4,7 @@ from colorama import Back,Fore,Style
 
 
 import math as m
+print("ax^2+bx+c=0"'\n')
 def darajehdo(a,b,c):
     delta=(b**2)-(4*a*c)
     if delta>0:
