@@ -2,12 +2,12 @@
 def dollara(m,n):
     for i in range(n):
         if i%2==0:  
-            print=("$&"*m)
+            print("$&"*m)
             
             
             
         else:
-            print=("&$"*m)
+            print("&$"*m)
             
             
            
