@@ -2,10 +2,14 @@
 def dollara(m,n):
     for i in range(n):
         if i%2==0:  
-            return("$&"*m)
+            print=("$&"*m)
+            
+            
             
         else:
-            return("&$"*m)
+            print=("&$"*m)
+            
+            
            
 
 n=int(input("Number of rows: "))
