@@ -3,7 +3,7 @@ import random as ra
 from colorama import Fore,Back,Style
 from tabulate import tabulate
 from pyfiglet import Figlet as p
-list_gu=()
+
 F=p(font='standard')
 d=0 
 d1=0
@@ -65,8 +65,9 @@ while True:
         [Fore.GREEN+Back.LIGHTMAGENTA_EX+'6)IR films'+Style.RESET_ALL],
         [Fore.GREEN+Back.LIGHTMAGENTA_EX+'7)Foreign film'+Style.RESET_ALL],
         [Fore.GREEN+Back.LIGHTMAGENTA_EX+'8)fruits'+Style.RESET_ALL],
-        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'9)clothes'+Style.RESET_ALL],
-        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'10)colors'+Style.RESET_ALL]]
+        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'9)sports'+Style.RESET_ALL],
+        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'10)clothes'+Style.RESET_ALL],
+        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'11)color'+Style.RESET_ALL]]
         print(tabulate(table,tablefmt='fancy_grid'))
 
         select2=int(input(Fore.RED+"choice: "+Style.RESET_ALL))
@@ -1937,6 +1938,198 @@ while True:
                                     c=False
                                     print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
                                 break
+        elif select2==11:
+            
+            for s in range(3):
+                #level 1 air name
+                if s==0:
+                    letterlist='a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z'
+                    print(F.renderText('level one'))
+                    
+                    finall_w=ra.choice(list_colorl1)
+
+                    for i in range(len(finall_w)):
+                            show_list.append("_")
+                            l=' '.join(show_list)
+                    print(Fore.CYAN+l+Style.RESET_ALL)
+            
+                    while True:
+                        
+                        print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
+                        if d<len(show_list) :
+                            if finall_w=="".join(show_list):
+                                print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                c=True
+                                show_list.clear()
+                                w_list.clear()
+                                d==0
+                                break
+                            else:
+                                
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
+                        
+                                if letterlist.find(letter)==-1:
+                                    print('wrong')
+                                    continue
+                                else:
+                                    letterlist=letterlist.split("*")
+                                    letterlist.remove(letter)
+                                    letterlist='*'.join(letterlist)
+                        
+                            
+                                    
+                                    
+                                if finall_w.find(letter)==-1:
+                                    w_list.append(letter)
+                                    d+=1
+                                    
+                                else:
+                                    for i in range(len(finall_w)):
+                                        if finall_w[i]==letter:
+                                            show_list[i]=letter.lower()
+                                        else:
+                                            continue      
+                                l2="".join(show_list)
+                                l3="".join(w_list)
+                                print(Fore.CYAN+l2,'\n'+l3+Style.RESET_ALL)
+                                
+                        else:
+                                if l2==finall_w:
+                                    print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                    c=True
+                                    show_list.clear()
+                                    w_list.clear()
+                                    d==0
+                                else:
+                                    print(Fore.RED+"sorry ,",name,"You have'nt made it to the next step:("'\n''bye bye^_^'+Style.RESET_ALL)
+                                    c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
+                                    
+                                    show_list.clear()
+                                    w_list.clear()
+                                    break
+                    #irname 2
+                elif s==1 and c==True:
+                    print(F.renderText('level tow'))
+                    letterlist='a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z'
+                    
+                    finall_w=ra.choice(list_colorl2)
+
+                    for i in range(len(finall_w)):
+                            show_list.append("_")
+                            l=' '.join(show_list)
+                    print(Fore.CYAN+l+Style.RESET_ALL)
+            
+                    while True:
+                        
+                        print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
+                        if d1<len(show_list) :
+                            if finall_w=="".join(show_list):
+                                print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                c=True
+                                show_list.clear()
+                                w_list.clear()
+                                break
+                            else:
+                                
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
+                        
+                                if letterlist.find(letter)==-1:
+                                    print('wrong')
+                                    continue
+                                else:
+                                    letterlist=letterlist.split("*")
+                                    letterlist.remove(letter)
+                                    letterlist='*'.join(letterlist)
+                                if finall_w.find(letter)==-1:
+                                    w_list.append(letter)
+                                    d1+=1
+                                    
+                                else:
+                                    for i in range(len(finall_w)):
+                                        if finall_w[i]==letter:
+                                            show_list[i]=letter.lower()
+                                        else:
+                                            continue      
+                                l2="".join(show_list)
+                                l3="".join(w_list)
+                                print(Fore.CYAN+l2,'\n'+l3+Style.RESET_ALL)
+                                
+                        else:
+                                if l2==finall_w:
+                                    print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                    c=True
+                                    show_list.clear()
+                                    
+                                    w_list.clear()
+                                else:
+                                    print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
+                                    c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
+                                    show_list.clear()
+                                break
+                if s==2 and c==True:
+                    
+                    print(F.renderText('level three'))
+                    letterlist='a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z'
+                    
+                    finall_w=ra.choice(list_colorl3)
+                    for i in range(len(finall_w)):
+                            show_list.append("_")
+                            l=' '.join(show_list)
+                    print(Fore.CYAN+l+Style.RESET_ALL)
+            
+                    while True:
+                        
+                        print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
+
+                        if d2<len(show_list) :
+                            if finall_w=="".join(show_list):
+                                print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                c=True
+                                show_list.clear()
+                                w_list.clear()
+                                break
+                            else:
+                                
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
+                        
+                                if letterlist.find(letter)==-1:
+                                    print('wrong')
+                                    continue
+                                else:
+                                    letterlist=letterlist.split("*")
+                                    letterlist.remove(letter)
+                                    letterlist='*'.join(letterlist)
+                                if finall_w.find(letter)==-1:
+                                    w_list.append(letter)
+                                    d2+=1
+                                    
+                                else:
+                                    for i in range(len(finall_w)):
+                                        if finall_w[i]==letter:
+                                            show_list[i]=letter.lower()
+                                        else:
+                                            continue      
+                                l2="".join(show_list)
+                                l3="".join(w_list)
+                                print(Fore.CYAN+l2,'\n'+l3+Style.RESET_ALL)
+                                
+                        else:
+                                if l2==finall_w:
+                                    print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                    c=True
+                                    show_list.clear()
+                                    w_list.clear()
+                                    
+                                else:
+                                    print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
+                                    c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
+                                break
+
+
+                            
         if c==False:
                 ex=input("Would you like to try again?yes/no...")
                 if ex.lower()=='yes':
@@ -1954,6 +2147,9 @@ while True:
                 else:
                     "wrong"
                     break
+        
+                             
+
                 ######################################################################################################################################################################################
                 ##########################################################easyyyyyyyyyyyyyyyyyyyyyy#######################################################################################################################
                 #########################################################################################################################################################################################################
@@ -1967,8 +2163,9 @@ while True:
         [Fore.GREEN+Back.LIGHTMAGENTA_EX+'6)IR films'+Style.RESET_ALL],
         [Fore.GREEN+Back.LIGHTMAGENTA_EX+'7)Foreign film'+Style.RESET_ALL],
         [Fore.GREEN+Back.LIGHTMAGENTA_EX+'8)fruits'+Style.RESET_ALL],
-        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'9)clothes'+Style.RESET_ALL],
-        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'10)colors'+Style.RESET_ALL]]
+        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'9)sports'+Style.RESET_ALL],
+        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'10)clothes'+Style.RESET_ALL],
+        [Fore.GREEN+Back.LIGHTMAGENTA_EX+'11)colors'+Style.RESET_ALL]]
         print(tabulate(table,tablefmt='fancy_grid'))
 
         select2=int(input(Fore.RED+"choice: "+Style.RESET_ALL))
@@ -3702,7 +3899,7 @@ while True:
                     while True:
                         
                         print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
-                        print(Fore.LIGHTRED_EX+"_".join(                                                   lisr_dressl1)+Style.RESET_ALL)
+                        print(Fore.LIGHTRED_EX+"_".join(                                                   list_dressl1)+Style.RESET_ALL)
                         if d<len(show_list) :
                             if finall_w=="".join(show_list):
                                 print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
@@ -3828,6 +4025,194 @@ while True:
                         
                         print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
                         print(Fore.LIGHTRED_EX+"_".join(                                                   list_dressl3)+Style.RESET_ALL)
+                        if d2<len(show_list) :
+                            if finall_w=="".join(show_list):
+                                print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                c=True
+                                show_list.clear()
+                                w_list.clear()
+                                break
+                            else:
+                                
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
+                        
+                                if letterlist.find(letter)==-1:
+                                    print('wrong')
+                                    continue
+                                else:
+                                    letterlist=letterlist.split("*")
+                                    letterlist.remove(letter)
+                                    letterlist='*'.join(letterlist)
+                                if finall_w.find(letter)==-1:
+                                    w_list.append(letter)
+                                    d2+=1
+                                    
+                                else:
+                                    for i in range(len(finall_w)):
+                                        if finall_w[i]==letter:
+                                            show_list[i]=letter.lower()
+                                        else:
+                                            continue      
+                                l2="".join(show_list)
+                                l3="".join(w_list)
+                                print(Fore.CYAN+l2,'\n'+l3+Style.RESET_ALL)
+                                
+                        else:
+                                if l2==finall_w:
+                                    print(Fore.GREEN+"hooray,",name,"you were able to go through all the steps^_^"'\n''bye bye:D'+Style.RESET_ALL)
+                                    c=True
+                                    show_list.clear()
+                                    w_list.clear()
+                                    
+                                else:
+                                    print(Fore.RED+"sorry ,",name,"you were able to go through two steps:("'\n''bye bye^_^'+Style.RESET_ALL)
+                                    c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
+                                break
+        elif select2==11:
+            
+            for s in range(3):
+                
+                if s==0:
+                    letterlist='a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z'
+                    print(F.renderText('level one'))
+                    
+                    finall_w=ra.choice(list_colorl1)
+
+                    for i in range(len(finall_w)):
+                            show_list.append("_")
+                            l=' '.join(show_list)
+                    print(Fore.CYAN+l+Style.RESET_ALL)
+            
+                    while True:
+                        
+                        print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
+                        print(Fore.LIGHTRED_EX+"_".join(list_colorl1)+Style.RESET_ALL)
+                        if d<len(show_list) :
+                            if finall_w=="".join(show_list):
+                                print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                c=True
+                                show_list.clear()
+                                w_list.clear()
+                                d==0
+                                break
+                            else:
+                                
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
+                        
+                                if letterlist.find(letter)==-1:
+                                    print('wrong')
+                                    continue
+                                else:
+                                    letterlist=letterlist.split("*")
+                                    letterlist.remove(letter)
+                                    letterlist='*'.join(letterlist)
+                                if finall_w.find(letter)==-1:
+                                    w_list.append(letter)
+                                    d+=1
+                                    
+                                else:
+                                    for i in range(len(finall_w)):
+                                        if finall_w[i]==letter:
+                                            show_list[i]=letter.lower()
+                                        else:
+                                            continue      
+                                l2="".join(show_list)
+                                l3="".join(w_list)
+                                print(Fore.CYAN+l2,'\n'+l3+Style.RESET_ALL)
+                                
+                        else:
+                                if l2==finall_w:
+                                    print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                    c=True
+                                    show_list.clear()
+                                    w_list.clear()
+                                    d==0
+                                else:
+                                    print(Fore.RED+"sorry ,",name,"You haven't made it to the next step:("'\n''bye bye^_^'+Style.RESET_ALL)
+                                    c=False
+                                    
+                                    show_list.clear()
+                                    w_list.clear()
+                                    break
+                    #cloth2
+                elif s==1 and c==True:
+                    letterlist='a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z'
+                    print(F.renderText('level tow'))
+                    
+                    finall_w=ra.choice(list_colorl2)
+
+                    for i in range(len(finall_w)):
+                            show_list.append("_")
+                            l=' '.join(show_list)
+                    print(Fore.CYAN+l+Style.RESET_ALL)
+            
+                    while True:
+                        
+                        print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
+                        print(Fore.LIGHTRED_EX+"_".join(                                                   list_colorl2)+Style.RESET_ALL)
+                        if d1<len(show_list) :
+                            if finall_w=="".join(show_list):
+                                print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                c=True
+                                show_list.clear()
+                                w_list.clear()
+                                break
+                            else:
+                                
+                                letter=input(Fore.LIGHTMAGENTA_EX+"letter: "+Style.RESET_ALL).lower()
+                        
+                                if letterlist.find(letter)==-1:
+                                    print('wrong')
+                                    continue
+                                else:
+                                    letterlist=letterlist.split("*")
+                                    letterlist.remove(letter)
+                                    letterlist='*'.join(letterlist)
+                                if finall_w.find(letter)==-1:
+                                    w_list.append(letter)
+                                    d1+=1
+                                    
+                                else:
+                                    for i in range(len(finall_w)):
+                                        if finall_w[i]==letter:
+                                            show_list[i]=letter.lower()
+                                        else:
+                                            continue      
+                                l2="".join(show_list)
+                                l3="".join(w_list)
+                                print(Fore.CYAN+l2,'\n'+l3+Style.RESET_ALL)
+                                
+                        else:
+                                if l2==finall_w:
+                                    print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
+                                    c=True
+                                    show_list.clear()
+                                    
+                                    w_list.clear()
+                                else:
+                                    print(Fore.RED+"sorry ,",name,"you were able to go through one steps:("'\n''bye bye^_^'+Style.RESET_ALL)
+                                    c=False
+                                    print(Fore.LIGHTMAGENTA_EX+Back.LIGHTBLUE_EX+"answer was "+finall_w+Style.RESET_ALL)
+                                    show_list.clear()
+                                break
+
+            # cloth3
+                if s==2 and c==True:
+                    letterlist='a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z'
+                    print(F.renderText('level three'))
+                    
+                    finall_w=ra.choice(list_colorl3)
+
+                    for i in range(len(finall_w)):
+                            show_list.append("_")
+                            l=' '.join(show_list)
+                    print(Fore.CYAN+l+Style.RESET_ALL)
+            
+                    while True:
+                        
+                        print(Fore.LIGHTRED_EX+letterlist+Style.RESET_ALL)
+                        print(Fore.LIGHTRED_EX+"_".join(                                                   list_colorl3)+Style.RESET_ALL)
                         if d2<len(show_list) :
                             if finall_w=="".join(show_list):
                                 print(Fore.GREEN+"hooray,",name,"You've made it to the next step^_^"+Style.RESET_ALL)
