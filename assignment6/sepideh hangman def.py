@@ -1,6 +1,4 @@
 
-from codecs import namereplace_errors
-from operator import iconcat
 import random as ra
 from colorama import Fore,Back,Style
 from tabulate import tabulate
