@@ -1,4 +1,3 @@
-
 import random as ra
 from colorama import Fore,Back,Style
 from tabulate import tabulate
@@ -118,7 +117,10 @@ def exit(ex,d):
                   c=False
                   return(c)
                 else:
-                    print("wrong")
+                    
+                    c='False+1'
+                    return(c)
+                
 def run(select2,name):
     
     print(Fore.LIGHTYELLOW_EX+Back.LIGHTMAGENTA_EX+name+Style.RESET_ALL+Fore.LIGHTYELLOW_EX+'you are choice',select2,'for category:D')
@@ -153,11 +155,9 @@ def run(select2,name):
                                 if exit(ex,d)==False:
                                     print("bye bye^_^")
                                     break
-                    
-
-            
-
-
+                                elif exit(ex,d)=='False+1':
+                                    print("wrong bye bye^_^")
+                                    break
 list_animal_l1=['cat','cow','crab','deer','dog','pig']
 list_animal_l2=['shark','tiger','wolf','zebra','chick','douck']
 list_animal_l3=['puppy','dolphin','shrimp','rabbit','whale','crocodile']
@@ -208,12 +208,3 @@ elif x=='2':
     catg()
     select2=int(input(Fore.RED+"choice: "+Style.RESET_ALL))
     run(select2,name)
-    
-
-    
-    
-    
-    
-
-
-
