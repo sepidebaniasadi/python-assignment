@@ -147,7 +147,7 @@ def run(select2,name):
                     d=d3
                     list=list3[select2-1]
                     I=(level1_h(list, name,d,x))
-                    if I==False:
+            if I==False:
                                 ex=input("Would you like to try again?yes/no...")
                                 exit(ex,d) 
                                 if exit(ex,d)==False:
@@ -214,7 +214,6 @@ elif x=='2':
     
     
     
-
 
 
 
