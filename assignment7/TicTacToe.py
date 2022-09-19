@@ -368,7 +368,7 @@ def run(select,listpc1):
                         plch2=input('pos? ')
                         pos2(plch2,pl2)
                         print('='*10)
-                        print(len(listeq))
+                        
                         if win2(pl1,pl2)== True:
                             print(Back.LIGHTMAGENTA_EX+'hoooray',name,'winner',emoji.emojize("😁")+Style.RESET_ALL)
                             res=time.time()-start
